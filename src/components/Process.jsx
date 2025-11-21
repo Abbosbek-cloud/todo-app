@@ -1,10 +1,12 @@
-import React from "react";
-import { Progress } from "reactstrap";
+import React from 'react';
+import { Progress } from 'reactstrap';
 
 const Process = ({ percent }) => {
   return (
     <div>
-      <Progress value={percent}>{percent.toFixed(0)}%</Progress>
+      <Progress value={percent} data-testid="progress-bar">
+        {percent.toFixed(0)}%
+      </Progress>
     </div>
   );
 };
