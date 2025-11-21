@@ -2,8 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test.describe('Todo App E2E Tests', () => {
   test.beforeEach(async ({ page }) => {
-    // Navigate to your app before each test
-    await page.goto('http://localhost:3000'); // Default Vite dev server port
+    await page.goto('http://localhost:3000');
   });
 
   test('should load the app with empty todo lists', async ({ page }) => {
